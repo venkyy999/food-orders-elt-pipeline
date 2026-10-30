@@ -1,0 +1,20 @@
+{
+  "source_file": "C:\\Users\\kanch\\Downloads\\Ellt\\Ellt\\food_orders.csv",
+  "load_run_id": "1-d7239860c71e0eee06cbc5c0d38448393d459321fd2127be2b750a8f36361433",
+  "batch_size": 100,
+  "total_records_extracted": 1010,
+  "total_batches_processed": 11,
+  "total_raw_records_loaded_into_mysql": null,
+  "total_raw_records_retrieved_from_mysql": null,
+  "total_valid_records_transformed": 1000,
+  "total_rejected_records": 10,
+  "total_transformed_records_loaded_into_analytics_database": null,
+  "successful_batches": 0,
+  "failed_batches": 0,
+  "database_status": "FAILED",
+  "database_error": "ProgrammingError: 1045",
+  "validation_status": "PASS",
+  "cleaned_csv": "C:\\Users\\kanch\\Downloads\\Ellt\\Ellt\\food_orders_cleaned.csv",
+  "validation_checks": 9,
+  "generated_at_utc": "2026-10-30T17:35:50.572376+00:00"
+}

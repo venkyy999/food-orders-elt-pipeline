@@ -1,0 +1,10 @@
+check,status,actual_result,explanation
+expected_cleaned_columns,PASS,missing columns: [],All source fields and four requested derived fields must exist.
+datetime_and_financial_types,PASS,datetime_types_valid=True; financial_types_valid=True,Timestamps use datetime64 and monetary/duration fields use numeric dtypes.
+duplicate_handling,PASS,exact duplicates remaining=0; removed=10,One copy of each exact duplicate is excluded; distinct transactions are retained.
+repeated_order_id_investigation,PASS,repeated IDs before=10; after=0,Repeated IDs are investigated separately and are not removed unless the full row is identical.
+negative_duration_in_valid_records,PASS,negative delivery durations among accepted rows=0,"Negative delivery durations are rejected, not changed to zero."
+manual_delivery_time_calculation,PASS,manually checked 5 accepted records,The first five calculated durations are compared directly with timestamp subtraction.
+revenue_formula,PASS,formula verified for 828 records with all components,Revenue is computed only when all four components are present.
+missing_values_before_and_after,PASS,cell nulls before=514; accepted output=682,Missing financial/category values are reported and retained; they are not blanket-imputed.
+record_count_reconciliation,PASS,input=1010; accepted=1000; rejected_or_excluded=10,Every source record must be accounted for as accepted or rejected/excluded.

@@ -1,0 +1,24 @@
+check,result,percentage,details
+missing_values:Order ID,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Customer ID,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Restaurant ID,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Order Date and Time,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Delivery Date and Time,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Order Value,41,4.06,Missing values are retained unless a rule requires rejection.
+missing_values:Delivery Fee,50,4.95,Missing values are retained unless a rule requires rejection.
+missing_values:Payment Method,50,4.95,Missing values are retained unless a rule requires rejection.
+missing_values:Discounts and Offers,242,23.96,Missing values are retained unless a rule requires rejection.
+missing_values:Commission Fee,40,3.96,Missing values are retained unless a rule requires rejection.
+missing_values:Payment Processing Fee,51,5.05,Missing values are retained unless a rule requires rejection.
+missing_values:Refunds/Chargebacks,40,3.96,Missing values are retained unless a rule requires rejection.
+missing_values:Weather Condition,0,0.0,Missing values are retained unless a rule requires rejection.
+missing_values:Order Channel,0,0.0,Missing values are retained unless a rule requires rejection.
+fully_duplicated_rows,10,0.99,Exact duplicates are inspected before one copy is excluded.
+repeated_order_ids,10,,122 appears 2 times; 133 appears 2 times; 156 appears 2 times; 197 appears 2 times; 208 appears 2 times; 419 appears 2 times; 497 appears 2 times; 571 appears 2 times; 580 appears 2 times; 831 appears 2 times
+unparseable_timestamps:Order Date and Time,0,0.0,Timestamps are parsed with coercion and invalid records are rejected.
+unparseable_timestamps:Delivery Date and Time,0,0.0,Timestamps are parsed with coercion and invalid records are rejected.
+negative_financial_values:Order Value,0,,Negative financial values are flagged and rejected.
+negative_financial_values:Delivery Fee,0,,Negative financial values are flagged and rejected.
+negative_financial_values:Commission Fee,0,,Negative financial values are flagged and rejected.
+negative_financial_values:Payment Processing Fee,0,,Negative financial values are flagged and rejected.
+negative_financial_values:Refunds/Chargebacks,0,,Negative financial values are flagged and rejected.
